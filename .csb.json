@@ -1,0 +1,19 @@
+{
+  "openFiles": [
+    "src/App.tsx",
+    "src/index.css",
+    "src/chart-utils.ts",
+    "src/chart-data-points.ts"
+  ],
+  "otherFiles": ["tailwind.config.js"],
+  "activeFile": "src/App.tsx",
+  "template": "vite-react-ts",
+  "options": {
+    "tailwind": true
+  },
+  "dependencies": {
+    "classnames": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  }
+}
