@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    min-height: 100dvh;
+  }
+}
+
+@layer utilities {
+  .mask-legend {
+    mask-image: linear-gradient(
+      transparent,
+      black 45%,
+      black 55%,
+      transparent 100%
+    );
+  }
+}
