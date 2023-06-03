@@ -13,11 +13,20 @@
 /*
  * Disabled utilities line here because the frontend.fyi preview can't
  * generate these custom utils yet. In both cases it renders a basic
- * classname with styles, so either way is okay.
+ * classname with styles, but tailwind also helps with generating
+ * vendor prefixes like the webkit prefix. So if you're using this
+ * in your own projects, just remove the webkit prefix version, and enable
+ * the utilities layer again.
  */
 /* @layer utilities { */
 .mask-legend {
   mask-image: linear-gradient(
+    transparent,
+    black 45%,
+    black 55%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
     transparent,
     black 45%,
     black 55%,
