@@ -18,7 +18,7 @@ function App() {
     if (!activeSection) return;
     document
       .querySelector(`.legend-item-${activeSection}`)
-      ?.scrollIntoView({ block: "center" });
+      ?.scrollIntoView({ block: "nearest", inline: "start" });
   }, [activeSection]);
 
   return (
@@ -77,7 +77,7 @@ function App() {
               tooltipData.map((dataPoint) => (
                 <div
                   className={classNames(
-                    "flex items-center gap-2",
+                    "flex scroll-my-5 items-center gap-2",
                     `legend-item-${dataPoint.name}`
                   )}
                   key={dataPoint.name}
